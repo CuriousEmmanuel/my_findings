@@ -1,0 +1,2 @@
+This is my first file to test if i can configure and use git and github 
+please work its been almost a month since i started 
