@@ -1,2 +1,3 @@
 This is my first file to test if i can configure and use git and github 
-please work its been almost a month since i started 
+it's been a year now and everything is working fine
+I changed this repo to learn git
