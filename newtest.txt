@@ -1,3 +1,2 @@
 This is my first file to test if i can configure and use git and github 
-it's been a year now and everything is working fine
-I changed this repo to learn git
+it's been a year now and everything is working fine and git dev is something cool
