@@ -15,3 +15,5 @@
 ### git remote add origin https://
 ### git branch -M main
 ### git push -u originain
+# connecting git with github
+### note. While entering username/email and password always use an ssh key as your password
