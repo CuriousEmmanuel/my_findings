@@ -17,4 +17,6 @@
 ### git push -u originain
 # connecting git with github
 ### note. While entering username/email and password always use an ssh key as your password
+
+## merging branchs
 ## open for any suggestions
