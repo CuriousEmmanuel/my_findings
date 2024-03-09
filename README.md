@@ -20,3 +20,7 @@
 
 ## merging branchs
 ## open for any suggestions
+# About open source
+### contribution to other projects
+## 1. create pull request
+## 2. wait for it to be merged 
