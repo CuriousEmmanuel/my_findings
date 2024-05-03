@@ -7,7 +7,7 @@
 ### git add Readme.md 
 ### git commit -m "first commit"
 ### git branch -M main // setting branch to main (use capital M(-M))
-### git remote addorigin https://
+### git remote add origin https://
 ### git push -u origin master
 
 # push existing repository from the command line
