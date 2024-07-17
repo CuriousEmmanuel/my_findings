@@ -43,3 +43,11 @@ var_dump() or error_log()
 and sometimes it jusst dont work no matter what you try,,,,, any suggestions?
 re installing and reconfiguring the server is the best option so far it worked for me i dont know for your case
 
+# second encounter with white screen of death
+## solution as per my discovery on 17/7/2024
+### go to 127.0.0.1/phpmyadmin
+then click on php.ini
+scroll down to error logs
+check report_errors off
+then change to 
+report_error On
