@@ -52,3 +52,4 @@ re installing and reconfiguring the server is the best option so far it worked f
 ### then go to your phpdirectory and locate the php configuration files and check php.ini file
 ### open the file for editing the  change error_reporting On
 ### save and close the file
+# screenshots needed
