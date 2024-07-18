@@ -46,8 +46,9 @@ re installing and reconfiguring the server is the best option so far it worked f
 # second encounter with white screen of death
 ## solution as per my discovery on 17/7/2024
 ### go to 127.0.0.1/phpmyadmin
-then click on php.ini
-scroll down to error logs
-check report_errors off
-then change to 
-report_error On
+### then click on php.ini
+### scroll down to error logs
+### check report_errors off
+### then go to your phpdirectory and locate the php configuration files and check php.ini file
+### open the file for editing the  change error_reporting On
+### save and close the file
