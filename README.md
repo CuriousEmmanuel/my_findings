@@ -53,3 +53,31 @@ re installing and reconfiguring the server is the best option so far it worked f
 ### open the file for editing the  change error_reporting On
 ### save and close the file
 # screenshots needed
+### I recently had a challenge with my kali linux usb lash drive not displaying and therefore can not mount 
+### after a long hours of research I found the best way to mount a flash drive using terminal it's so simple makes me feels stupid  how easy it is
+## steps
+
+
+1. Find what the drive is called
+
+You'll need to know what the drive is called to mount it. To do that fire off one of the following (ranked in order of my preference):
+
+lsblk
+sudo blkid
+sudo fdisk -l
+
+You're looking for a partition that should look something like: /dev/sdb1. The more disks you have the higher the letter this is likely to be. Anyway, find it and remember what it's called.
+2. Create a mount point (optional)
+
+This needs to be mounted into the filesystem somewhere. You can usually use /mnt/ if you're being lazy and nothing else is mounted there but otherwise you'll want to create a new directory:
+
+sudo  mkdir /media/usb
+
+3. Mount!
+
+sudo mount /dev/sdb1 /media/usb
+
+When you're done, just fire off:
+
+sudo umount /media/usb
+
