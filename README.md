@@ -46,13 +46,26 @@ re installing and reconfiguring the server is the best option so far it worked f
 # second encounter with white screen of death
 ## solution as per my discovery on 17/7/2024
 ### go to 127.0.0.1/phpmyadmin
-### then click on php.ini
+![phpinfo](https://github.com/user-attachments/assets/4b9c0ebe-db7d-467b-82c6-294e001c9007)
+
+
+
+### click to open the phpinfo in nav bar
+
+![phpinfoopen](https://github.com/user-attachments/assets/569b4713-c06d-4115-8e0d-5901b0c34496)
+
+
 ### scroll down to error logs
 ### check report_errors off
 ### then go to your phpdirectory and locate the php configuration files and check php.ini file
 ### open the file for editing the  change error_reporting On
 ### save and close the file
-# screenshots needed
+
+
+
+# mounting a flash drive disk on kali linux 
+# flash drive not displaying in kali linux
+
 ### I recently had a challenge with my kali linux usb lash drive not displaying and therefore can not mount 
 ### after a long hours of research I found the best way to mount a flash drive using terminal it's so simple makes me feels stupid  how easy it is
 ## steps
