@@ -56,6 +56,11 @@ re installing and reconfiguring the server is the best option so far it worked f
 
 
 ### scroll down to error logs
+
+![displayerrors](https://github.com/user-attachments/assets/f632728b-9c73-4c39-8b7a-99a6fddb61c3)
+
+
+
 ### check report_errors off
 ### then go to your phpdirectory and locate the php configuration files and check php.ini file
 ### open the file for editing the  change error_reporting On
