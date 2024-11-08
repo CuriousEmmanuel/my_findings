@@ -99,3 +99,14 @@ When you're done, just fire off:
 
 sudo umount /media/usb
 
+
+#LARAVEL
+FIRST ERROR
+SQLSTATE[HYOOO]: General error:1 no such table: sessions(....)
+SOLUTION
+### php artisan migrate
+This should create all the necessary tables for your application, including the session table.
+### then clear cache
+php artisan config:cache
+php artisan cache:clear
+restart your server and you are ready to go
