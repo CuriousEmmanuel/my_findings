@@ -99,7 +99,7 @@ When you're done, just fire off:
 
 sudo umount /media/usb
 
-
+### 8/11/2024:1152hrs
 # LARAVEL
 ### FIRST ERROR
 SQLSTATE[HYOOO]: General error:1 no such table: sessions(....)
