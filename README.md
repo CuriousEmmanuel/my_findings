@@ -1,4 +1,4 @@
-# basic git commands
+we# basic git commands
 
 #  create a new repo from command line
 
@@ -100,8 +100,8 @@ When you're done, just fire off:
 sudo umount /media/usb
 
 
-#LARAVEL
-FIRST ERROR
+# LARAVEL
+### FIRST ERROR
 SQLSTATE[HYOOO]: General error:1 no such table: sessions(....)
 SOLUTION
 ### php artisan migrate
