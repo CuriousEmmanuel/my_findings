@@ -235,4 +235,7 @@ Future Improvements
 To avoid hardcoding the database name in config/database.php, revisit the .env setup and ensure Laravel correctly pulls the database credentials from the environment file.
 
 some dedails are not necessary 
+
+# NB
+### after editing your .env file editing the connection type and database name check also your config/database.php on the same directory change also the database name and connection type for example mine was sqlite and i needed to change to mysql
 stay safe
