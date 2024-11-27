@@ -111,7 +111,7 @@ php artisan config:cache
 php artisan cache:clear
 restart your server and you are ready to go
 
-## nov 27 2024
+## Nov 27 2024 1015hrs
 
 ### After installation bof laravel woth intention of creating a new project you realize you cannot connect to your local database on xammp or wammp because mybe the default connection is sqlite and you are using mysql or vice versa, try changing and when you change on the .env file make sure you update the congig/database.php file too on the laravel directory. it worked for me 
 ## detailed report
