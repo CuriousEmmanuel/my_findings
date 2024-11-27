@@ -110,3 +110,119 @@ This should create all the necessary tables for your application, including the 
 php artisan config:cache
 php artisan cache:clear
 restart your server and you are ready to go
+## nov 27 2024
+### After installation bof laravel woth intention of creating a new project you realize you cannot connect to your local database on xammp or wammp because mybe the default connection is sqlite and you are using mysql or vice versa, try changing and when you change on the .env file make sure you update the congig/database.php file too on the laravel directory. it worked for me 
+## detailed report
+
+Laravel Database Connection Issue: Solution Report
+
+Problem Overview
+
+While setting up a Laravel project, an error occurred stating:
+
+> "Database 'laravel' does not exist on the 'mysql' connection."
+
+
+
+This error persisted even after updating the .env file with the correct database name and credentials. Laravel was still trying to connect to the default database (laravel) or using SQLite as the default connection, causing the application to fail.
+
+
+---
+
+Root Cause Analysis
+
+The issue arose due to two misconfigurations:
+
+1. Incorrect Default Database Connection:
+The default database connection in config/database.php was set to sqlite, which does not match the required mysql connection.
+
+
+2. Unapplied Configuration Changes:
+Laravel was caching old environment settings, causing it to ignore updates made to the .env file.
+
+
+
+
+---
+
+Solution Steps
+
+1. Update the Database Name
+
+In the config/database.php file, the database name was hardcoded to ensure Laravel connected to the correct database.
+
+File: config/database.php
+
+'database' => 'your_actual_db_name', // Replaced 'env('DB_DATABASE', 'forge')' with the database name
+
+
+---
+
+2. Set the Default Connection to MySQL
+
+To ensure Laravel uses MySQL as the default database connection, the following change was made in config/database.php:
+
+Before:
+
+'default' => env('DB_CONNECTION', 'sqlite'),
+
+After:
+
+'default' => env('DB_CONNECTION', 'mysql'),
+
+
+---
+
+3. Clear Laravel Cache
+
+Laravel caches configurations to improve performance. The following Artisan commands were executed to clear the cache and reload the updated configurations:
+
+php artisan config:clear
+php artisan cache:clear
+php artisan config:cache
+
+
+---
+
+4. Verify the Database Connection
+
+To ensure the application connects to the correct database:
+
+Verified the database exists in MySQL:
+
+SHOW DATABASES;
+
+Confirmed the application connects properly with the updated settings.
+
+
+
+---
+
+Outcome
+
+After applying the above changes, Laravel successfully connected to the mysql database named your_actual_db_name, and the application resumed functioning without errors.
+
+
+---
+
+Lessons Learned
+
+1. Always verify both .env and config/database.php settings to avoid discrepancies.
+
+
+2. Clear Laravel's configuration cache after making changes to ensure updates are applied.
+
+
+3. Document any manual configuration changes for future reference.
+
+
+
+
+---
+
+Future Improvements
+
+To avoid hardcoding the database name in config/database.php, revisit the .env setup and ensure Laravel correctly pulls the database credentials from the environment file.
+
+some dedails are not necessary 
+stay safe
