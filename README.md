@@ -110,11 +110,14 @@ This should create all the necessary tables for your application, including the 
 php artisan config:cache
 php artisan cache:clear
 restart your server and you are ready to go
+
 ## nov 27 2024
+
 ### After installation bof laravel woth intention of creating a new project you realize you cannot connect to your local database on xammp or wammp because mybe the default connection is sqlite and you are using mysql or vice versa, try changing and when you change on the .env file make sure you update the congig/database.php file too on the laravel directory. it worked for me 
 ## detailed report
 
 Laravel Database Connection Issue: Solution Report
+
 
 Problem Overview
 
@@ -122,7 +125,7 @@ While setting up a Laravel project, an error occurred stating:
 
 > "Database 'laravel' does not exist on the 'mysql' connection."
 
-
+![laravel](https://github.com/user-attachments/assets/4f49dcbd-be8d-4a6c-9b76-4f531bd93f19)
 
 This error persisted even after updating the .env file with the correct database name and credentials. Laravel was still trying to connect to the default database (laravel) or using SQLite as the default connection, causing the application to fail.
 
@@ -132,6 +135,11 @@ This error persisted even after updating the .env file with the correct database
 Root Cause Analysis
 
 The issue arose due to two misconfigurations:
+after updating the .env file you need to also update the config/database.php file on the laravel directory
+mostly ocures when laravel sets sqlite as default and you are using mysql
+![sqlitetomysql](https://github.com/user-attachments/assets/dcf0da30-b786-4500-9f7e-06034187850a)
+
+
 
 1. Incorrect Default Database Connection:
 The default database connection in config/database.php was set to sqlite, which does not match the required mysql connection.
@@ -216,6 +224,8 @@ Lessons Learned
 3. Document any manual configuration changes for future reference.
 
 
+## after changes now you can migrate without any problems
+![laravel solution](https://github.com/user-attachments/assets/8186a961-d2c8-49cf-be28-d478ce370b7a)
 
 
 ---
