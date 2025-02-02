@@ -178,7 +178,10 @@ After:
 
 'default' => env('DB_CONNECTION', 'mysql'),
 
-
+2/2/2025[
+after changing the databse type dont forget to change the database name just bellow when you scroll down to mysql file 
+rename the db name to your dbname in xampp
+]
 ---
 
 3. Clear Laravel Cache
